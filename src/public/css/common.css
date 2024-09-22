@@ -3,9 +3,11 @@
 }
 
 .header__inner {
-    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px 15px;
-    max-width: 1230px;
+    /* max-width: 1230px; */
 }
 
 .header-utilities {
@@ -20,6 +22,12 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
+}
+
+.header-nav {
+    display:flex;
+    align-items: center;
+    padding-right: 30px;
 }
 
 .header-nav__link {

@@ -74,13 +74,13 @@
                         <div class="update-form__item">
                             <p class="update-form__item-p">Category 1</p>
                         </div>
-                    <div class="update-form__button">
-                        <button class="update-form__button-submit" type="submit">
-                            更新
-                        </button>
-                    </div>
-                </form>
-            </td>
+                        <div class="update-form__button">
+                            <button class="update-form__button-submit" type="submit">
+                                更新
+                            </button>
+                        </div>
+                    </form>
+                </td>
                 <td class="todo-table__item">
                     <form class="delete-form" action="/todos/delete" method="post">
                         @method('DELETE') @csrf
