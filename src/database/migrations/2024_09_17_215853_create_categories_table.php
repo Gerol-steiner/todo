@@ -15,8 +15,7 @@ class CreateCategoriesTable extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 10)->unique();  //Categoryモデルのレコードの属性が'name'ということ
-            //unique()：同じ名前のカテゴリを複数作成することができなくなる
+            $table->string('name', 20)->unique();
             $table->timestamps();
         });
     }

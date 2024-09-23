@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class TodoRequest extends FormRequest
+class CategoryRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,20 +24,17 @@ class TodoRequest extends FormRequest
     public function rules()
     {
         return [
-            'content' => 'required|string|max:20',
+            'name' => 'required|string|max:10|unique:categories'
         ];
     }
 
     public function messages()
     {
         return [
-            'content.required' => 'Todoを入力してください',
-            'content.string' => 'Todoを文字列で入力してください',
-            'content.max' => 'Todoを20文字以下で入力してください',
+            'name.required' => 'Categoryを入力してください',
+            'name.string' => 'Categoryを文字列で入力してください',
+            'name.max' => 'Categoryを10文字以内で入力してください',
+            'name.unique' => 'カテゴリが既に存在しています'
         ];
     }
-
-
-
 }
-
