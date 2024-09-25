@@ -43,7 +43,6 @@
 }
 
 .create-form__item-input,.search-form__item-input {
-    padding: 30px;
     margin-right: 10px;
     width: 70%;
     height: 40px;
@@ -113,8 +112,9 @@
 }
 
 .update-form__item {
-    width: 80%;
+    width: 40%;
     line-height: 50%;
+    background-color: rgb(238, 186, 238);
 }
 
 .update-form__item-input {

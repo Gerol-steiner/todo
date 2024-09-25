@@ -24,7 +24,7 @@ class CategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|string|max:10|unique:categories'
+            'name' => 'required|string|max:20|unique:categories'
         ];
     }
 
@@ -33,7 +33,7 @@ class CategoryRequest extends FormRequest
         return [
             'name.required' => 'Categoryを入力してください',
             'name.string' => 'Categoryを文字列で入力してください',
-            'name.max' => 'Categoryを10文字以内で入力してください',
+            'name.max' => 'Categoryを20文字以内で入力してください',
             'name.unique' => 'カテゴリが既に存在しています'
         ];
     }
